@@ -1,0 +1,47 @@
+clc;
+global total
+disp('KASIR RESTORAN')
+
+disp('Menu yang tersedia');
+disp('1. Udang bakar');
+disp('2. Gurame asam manis');
+disp('3. Ayam rica-rica');
+disp('4. Ayam Geprek');
+disp('');
+
+pilih = input('Pilihan Anda (1-4): ');
+
+    switch pilih
+        case 1
+            disp('Udang bakar')
+            disp('**********************************************')
+            p=input('banyaknya pesanan = ');harga = 12000;bayar = p*harga;
+            disp(['Jumlah yang dipesan = ' + num2str(p)]);
+            disp(['Total yang harus dibayar = ' + num2str(bayar)])
+        
+        case 2
+            disp('Gurame asam manis')
+            disp('**********************************************')
+            harga=32000; p=input('banyaknya pesanan = ');
+            bayar=p*harga;
+            disp(['jumlah yang dipesan= '+ num2str(p)]);
+            disp(['total yang harus dibayar= '+ num2str(bayar)])
+        case 3
+            disp('Ayam rica-rica')
+            disp('*********************************************')
+            harga=18000; p=input('banyaknya pesanan = ');
+            bayar=p*harga;
+            disp('jumlah yang dipesan= '+ num2str(p));
+            disp('total yang harus dibayar= ' + num2str(bayar))
+        case 4
+            disp('Ayam geprek')
+            disp('**********************************************')
+            harga=12000;
+            p=input('banyaknya pesanan = ');
+            bayar=p*harga;
+            disp(['jumlah yang dipesan= ' + num2str(p)]);
+            disp(['total yang harus dibayar= ' num2str(bayar)])
+        otherwise
+            disp('Maaf, menu yang Anda pesan tidak tersedia');
+    end
+    
